@@ -1,0 +1,17 @@
+{
+  "name": "config-parser",
+  "version": "0.1.0",
+  "description": "Arma config parser tool.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "author": "Laszlo Major",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^1.5.3"
+  }
+}
