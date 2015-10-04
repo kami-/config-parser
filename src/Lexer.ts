@@ -72,6 +72,13 @@ interface LexerState {
     errorCode: ErrorCode;
 }
 
+interface LexerError {
+    errorCode: ErrorCode,
+    message: string,
+    token: Token,
+    context: string
+}
+
 function isDigit(ch: string): boolean {
     return ch <= '9' && ch >= '0';
 }

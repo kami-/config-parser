@@ -7,11 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": ""
   },
   "author": "Laszlo Major",
   "license": "MIT",
   "devDependencies": {
+    "tsunit.external": "^1.9.0",
     "typescript": "^1.5.3"
   }
 }
