@@ -47,12 +47,15 @@ interface ParserState {
 }
 
 function parserError(input: string, token: Lexer.Token, errorCode: ErrorCode) {
-    throw {
+    var error = {
         errorCode: errorCode,
         message: getErrorMessage(token, errorCode),
         token: token,
         context: getErrorContext(input, token)
     };
+    console.log(error.message);
+    console.log(error.context);
+    throw new Error(JSON.stringify(error));
 }
 
 function acceptToken(pt: ParserState, tokenType: Lexer.TokenType) {
