@@ -20,7 +20,7 @@ function updateIds(node: Parser.Node): number {
     var items = Ast.select(node, 'Item*');
     var count = 0;
     for (var i = 0, len = items.length; i < len; i++) {
-        if (Ast.select(items[i], 'dataType')[0].value = 'Group') {
+        if (Ast.select(items[i], 'dataType')[0].value == 'Group') {
             var groupItems = Ast.select(items[i], 'Entities.Item*');
             for (var j = 0, groupLen = groupItems.length; j < groupLen; j++) {
                 Ast.select(groupItems[j], 'id')[0].value = count + 1;
