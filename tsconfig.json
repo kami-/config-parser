@@ -16,7 +16,6 @@
         "./src/ts/Lexer.ts",
         "./src/ts/Mission.ts",
         "./src/ts/Parser.ts",
-        "./src/ts/PrettyPrinter.ts",
-        "./typings/node.d.ts"
+        "./src/ts/PrettyPrinter.ts"
     ]
 }
